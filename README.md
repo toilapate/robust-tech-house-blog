@@ -1,24 +1,35 @@
-# README
+# Robust Tech House Blog
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[Web UI](https://robust-tech-house-blog.herokuapp.com)
 
-Things you may want to cover:
 
-* Ruby version
+### Environment Setup
+#### Local
+1. Install RVM, Ruby (2.6.3) and `bundler` gem
+2. `cd` to project folder and run `bundle`
+3. Update credentials of your local PostgreSQL in `config/database.yml`
+4. Seed database:
+  * `rake db:seed`
+5. Run `rails s`
+6. Visit [http://localhost:3000](http://localhost:3000)
 
-* System dependencies
+#### Heroku
+1. Enable resources:
+  * PostgreSQL
 
-* Configuration
+### Run Tests
+Make sure you have `PhantomJS` installed on your local machine.
+1. RSpec: `rspec`
+2. Cucumber: `cucumber`
 
-* Database creation
+### Deployment Setup
 
-* Database initialization
+1. Install Heroku CLI `brew install heroku/brew/heroku`
+2. Create the staging remote `heroku git:remote -a robust-tech-house-blog`
 
-* How to run the test suite
+### Deployment
 
-* Services (job queues, cache servers, search engines, etc.)
+Deploy with `git push heroku master`
 
-* Deployment instructions
 
-* ...
+

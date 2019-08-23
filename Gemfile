@@ -21,6 +21,8 @@ gem 'kaminari',     '~> 1.1', '>= 1.1.1'
 group :development, :test do
   gem 'rspec-rails',       '~> 3.8', '>= 3.8.2'
   gem 'factory_bot_rails', '~> 5.0', '>= 5.0.2'
+  gem 'cucumber-rails',    '~> 1.8', require: false
+  gem 'database_cleaner'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
