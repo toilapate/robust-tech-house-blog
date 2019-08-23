@@ -15,8 +15,11 @@ gem 'slim-rails',   '~> 3.2'
 gem 'devise',       '~> 4.7'
 gem 'bootstrap',    '~> 4.3', '>= 4.3.1'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.5'
+gem 'factory_bot',  '~> 5.0', '>= 5.0.2'
+gem 'faker',        '~> 2.1', '>= 2.1.2'
 
 group :development, :test do
+  gem 'rspec-rails', '~> 3.8', '>= 3.8.2'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 

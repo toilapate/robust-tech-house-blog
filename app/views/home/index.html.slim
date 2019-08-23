@@ -1,0 +1,4 @@
+.row
+  - @posts.each do |post|
+    .col-sm-4
+      = render 'posts/card', post: post
