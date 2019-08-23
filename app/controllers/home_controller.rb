@@ -1,5 +1,11 @@
 class HomeController < ApplicationController
   def index
-    @posts = Post.page(params[:page])
+    @posts = post_service.posts
+  end
+
+  private
+
+  def post_service
+    post_service ||= PostService.new(params)
   end
 end
