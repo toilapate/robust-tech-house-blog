@@ -16,7 +16,7 @@ gem 'devise',       '~> 4.7'
 gem 'bootstrap',    '~> 4.3', '>= 4.3.1'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.5'
 gem 'faker',        '~> 2.1', '>= 2.1.2'
-gem 'kaminari',     '~> 1.1', '>= 1.1.1'
+gem 'kaminari',     '~> 1.2'
 
 group :development, :test do
   gem 'rspec-rails',       '~> 3.8', '>= 3.8.2'
